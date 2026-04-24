@@ -142,4 +142,4 @@
   updateTimezoneDisplay();
   initCalculator();
   syncTheme();
-})();
+})(); 
