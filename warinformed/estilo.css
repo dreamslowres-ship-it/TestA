@@ -329,4 +329,4 @@ body {
 @media (max-width: 400px) {
   .war-title-section h1 { font-size: 1.2rem; }
   .bloques-grid { grid-template-columns: 1fr; }
-}
+} 
