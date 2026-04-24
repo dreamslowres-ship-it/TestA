@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Mascota del Clan</title>
+  <link rel="stylesheet" href="./estilo.css">
+  <!-- Precarga de los tres spritesheets -->
+  <link rel="preload" as="image" href="/mascota/sprites/mascota-1.png">
+  <link rel="preload" as="image" href="/mascota/sprites/mascota-2.png">
+  <link rel="preload" as="image" href="/mascota/sprites/mascota-3.png">
+  <link rel="preload" as="image" href="/mascota/sprites/fondo.png">
+  <link rel="preload" as="image" href="/mascota/sprites/plataforma.png">
+</head>
+<body>
+  <div class="mascota-wrapper">
+    <!-- Fondo (cambia con modo guerra) -->
+    <img id="fondo" class="fondo" src="/mascota/sprites/fondo.png" alt="Fondo del hábitat">
+    
+    <!-- Plataforma / suelo -->
+    <img id="plataforma" class="plataforma" src="/mascota/sprites/plataforma.png" alt="Plataforma">
+    
+    <!-- Canvas donde se dibuja la mascota -->
+    <canvas id="mascotaCanvas" class="mascota-canvas" width="320" height="320"></canvas>
+    
+    <!-- Indicador de estado más visible -->
+    <div id="estadoIndicator" class="estado-indicator" title="Modo normal"></div>
+  </div>
+  <script src="./mascota.js"></script>
+</body>
+</html>
